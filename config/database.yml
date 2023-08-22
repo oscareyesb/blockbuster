@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: block_buster_production
-  username: block_buster
-  password: <%= ENV["BLOCK_BUSTER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
